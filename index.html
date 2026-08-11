@@ -33,7 +33,7 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         
-        <button class="visit-btn">Visit Github</button>
+        <a class="visit-btn" href="https://github.com/TheFiftGuy" target="_blank">Visit Github</a>
     </header>
 
     <section id="about" class="about">
@@ -47,12 +47,17 @@
                     <span>Game Programmer</span>
                 </div>
                 <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn">Contact</div>
+                    <a href="#todo" download="DeclanMcGuinness_Resume.pdf" class="btn">Download TODO</a>
+                    <a href="#contact" class="btn">Contact</a>
+                    
                 </div>
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/TheFiftGuy" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mcguinness-declan/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
             </div>   
         </div>
@@ -105,8 +110,10 @@
                 <h3>Kwalee</h3>
                 <p>The text goes here blah blah blah blah blah blah blah blah blah blah blah blah.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <a class="btn" href="https://store.steampowered.com/app/490110/The_Precinct/" target="_blank">The Precinct</a>
+                    <a class="btn" href="https://store.steampowered.com/app/1456760/ROBOBEAT/" target="_blank">ROBOBEAT</a>
+                    <a class="btn" href="https://store.steampowered.com/app/1272290/Space_Chef/" target="_blank">Space Chef</a>
+                    <a class="btn" href="https://store.steampowered.com/app/1507120/The_Spirit_of_the_Samurai/" target="_blank">The Spirit of the Samurai</a>
                 </div>
             </div>
 
@@ -115,8 +122,7 @@
                 <h3>Rollback</h3>
                 <p>The text goes here blah blah blah blah blah blah blah blah blah blah blah blah.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <a class="btn" href="https://github.com/TheFiftGuy/Rollback-Networking-Shooter" target="_blank">Github Repo</a>
                 </div>
             </div>
 
@@ -125,24 +131,34 @@
                 <h3>Captis Crystallis</h3>
                 <p>The text goes here blah blah blah blah blah blah blah blah blah blah blah blah.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <a class="btn" href="https://youtu.be/KYUz1HxsNkY" target="_blank">Video</a>
+                    <a class="btn" href="https://github.com/TheFiftGuy/Captis-Crystallis-1.0" target="_blank">Github Repo</a>
                 </div>
             </div>
         </div>
     </section>
     
     <section class="contact" id="contact">
-        <div class="input-box">
-            
-            <h2 class="section-title">Contact Me</h2>
-            
-            <div class="input">
-                <input type="text" placeholder="example@email.com">
-                <i class="fa-solid fa-envelope"></i>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        
+        <form action="#">
+            <div class="input-group">
+                
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="numeric" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
             </div>
-            <div class="btn">Submit</div>
-        </div>
+            
+            <div class="input-group-2">
+                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
     </section>
     
     <footer>
