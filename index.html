@@ -7,6 +7,18 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "D29Hf5TPFXVDZXFdM",
+            });
+        })();
+    </script>
+    
 </head>
 
 <body>
@@ -100,7 +112,7 @@
         </div>
     </section>
     
-    <section id="projects" class"projects>
+    <section id="projects" class="projects">
     
         <h2 class="section-title">Recent Projects</h2>
         <div class="projects-grid">
@@ -145,18 +157,18 @@
             <div class="input-group">
                 
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Full Name *" id="contact-name">
+                    <input type="email" placeholder="Email *" id="contact-email">
                 </div>
                 <div class="input-box">
-                    <input type="numeric" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="numeric" placeholder="Phone Number" id="contact-phone">
+                    <input type="text" placeholder="Subject *" id="contact-subject">
                 </div>
             </div>
             
             <div class="input-group-2">
-                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <textarea name="" id="contact-message" placeholder="Your Message *" cols="30" rows="10"></textarea>
+                <input type="button" value="Send Email" class="btn" onclick="sendEmail()">
             </div>
         </form>
     </section>
