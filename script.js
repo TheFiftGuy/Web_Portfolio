@@ -18,6 +18,7 @@ function sendEmail()    {
         emailjs.send('service_97h76w9', 'template_ok8l80p', templateParams).then(
             (response) => {
                 alert("Email sent successfully!");
+                document.getElementById('email-form').reset();
             },
             (error) => {
                 alert("Email failed to send.");

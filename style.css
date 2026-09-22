@@ -297,7 +297,6 @@ section{
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 1.5rem;
     border: 2px solid var(--main-color);
     border-radius: 3rem;
     cursor: pointer;
@@ -309,6 +308,7 @@ section{
     transform: translateY(-10px)scale(1.02);
 }
 .project-card img{
+    padding-bottom: 1rem;
     width: 20vw;
     border-radius: 1rem;
 }
@@ -330,6 +330,14 @@ section{
 .project-card h3{
     font-size: 2rem;
     font-weight: 500;
+}
+.project-card h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+}
+.project-card p{
+    padding-bottom: 1rem;
 }
 
 /*Contact Section*/
